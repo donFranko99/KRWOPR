@@ -35,6 +35,9 @@ img{
     text-transform: uppercase;
     color: #fff;
 }
+.menu p{
+    text-align: center;
+}
 .menu:hover {
     background-color: #eee;
     color: #111;
