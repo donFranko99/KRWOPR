@@ -33,7 +33,6 @@ img{
     width: 100%;
     height: 100%;
     text-transform: uppercase;
-    text-align: center;
     color: #fff;
 }
 .menu:hover {
@@ -67,9 +66,10 @@ img{
     color: #fc9803;
     height: auto;
     width: 100%;
+    font-weight: 900;
     text-indent: 10%;
     font-size: 150px;
-    text-shadow:2px 2px#444;
+    text-shadow:3px 3px#444;
 }
 #icons{
     display: flex;
@@ -99,9 +99,10 @@ img{
     opacity: 1;;
 }
 .name{
-    max-width: 150px;
+    max-width: 200px;
     font-size: 10px;
     text-align: center;
+    text-transform: uppercase;
 }
 .contact{
     max-width: 150px;
