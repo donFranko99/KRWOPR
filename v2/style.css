@@ -3,7 +3,19 @@
     padding: 0;
     text-decoration: none;
 }
-body {
+#layout{
+
+}
+@media(min-width: 320px)and(max-width: 767px){
+
+}
+@media(min-width: 768px)and(max-width: 959px){
+    
+}
+@media(min-width: 960px){
+    
+}
+/* body {
     font-family: Noto Sans, sans-serif;
     font-size: 16px;
 }
@@ -126,4 +138,4 @@ img{
     max-width: 150px;
     padding-right: 3%;
     font-size: 12px;
-}
+} */
