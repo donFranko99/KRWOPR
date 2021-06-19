@@ -16,14 +16,14 @@
                 <div id="name"><p>Cracow Water Rescue Team</p></div>
                 <div id="number"><p>984</p></div>
             </div>
-            <div id="nav-container">
-                <div id="menu"><img src="menu.png" alt=""></div>
-                <div id="nav">
-                    <a href="#header"><div class="nav-option"><p>Home</p></div></a>
-                    <a href="#ourgroup"><div class="nav-option"><p>Our Group</p></div></a>
-                    <a href="#events"><div class="nav-option"><p>Events</p></div></a>
-                    <a href="#contact"><div class="nav-option"><p>Contact</p></div></a>
-                    <a href="#gallery"><div class="nav-option"><p>Gallery</p></div></a>
+            <div class="nav-container">
+                <div onclick="myFunction()" class="menu"><img id="x" src="menu.png" alt=""></div>
+                <div id="nav" class="dropdown">
+                    <a href="#header"><div class="nav-option">Home</div></a>
+                    <a href="#ourgroup"><div class="nav-option">Our Group</div></a>
+                    <a href="#events"><div class="nav-option">Events</div></a>
+                    <a href="#contact"><div class="nav-option">Contact</div></a>
+                    <a href="#gallery"><div class="nav-option">Gallery</div></a>
                 </div>
             </div>
             <div class="bg-image"></div>
@@ -72,7 +72,7 @@
                         <div class="mapouter">
                             <div class="gmap_canvas">
                                 <iframe width="280" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=dojazdowa%204,%20krakow&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                <style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style>
+                                <style>.mapouter{position:relative;text-align:center;height:400px;width:100%;}</style>
                                 <style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:300px;}</style>
                             </div>
                         </div>
@@ -101,11 +101,29 @@
                 <h1>Cracow water rescue team</h1>
             </div>
             <div class="contact">
-                <p>Kraków 30-105<br>
-                    Dojazdowa 4
-                </p>
+                <p>Kraków<br>30-105<br>Dojazdowa 4</p>
             </div>
         </div>
     </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("nav").classList.toggle("down");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('#x')) {
+                var dropdowns = document.getElementsByClassName("dropdown");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('down')) {
+                        openDropdown.classList.remove('down');
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>

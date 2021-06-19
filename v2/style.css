@@ -15,6 +15,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 #header{
     display: flex;
@@ -42,9 +43,14 @@ img{
     height: 65px;
     width: 65px;
 }
-#nav-container{
+.nav-container{
     cursor: pointer;
     transition: transform .2s;
+    display: inline-block;
+    position: relative;
+}
+.nav-container:hover, #nav-container:focus{
+    transform: scale(1.2);
 }
 #number{
     padding: 0px 10px;
@@ -55,12 +61,34 @@ img{
     text-shadow: 1px 1px #555;
     text-decoration-thickness: bold;
 }
-#nav{
-    display: none;
-}
-#menu{
+.menu{
     width: 70px;
     height: 70px;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #555;
+    color: #fff;
+}
+.down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-option:hover{
+    transform: scale(1.2);
+}
+.nav-option{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    text-align: center;
 }
 .bg-image{
     position: absolute;
@@ -71,10 +99,11 @@ img{
     width: 100%;
     height: 70px;
     z-index: -1;
-    opacity: 0.45;
+    opacity: 0.8;
 }
 #main{
     top: 70px;
+    width: 94%;
 }
 #footer{
     width: 100%;
