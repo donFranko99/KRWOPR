@@ -49,9 +49,6 @@ img{
     display: inline-block;
     position: relative;
 }
-.nav-container:hover, #nav-container:focus{
-    transform: scale(1.2);
-}
 #number{
     padding: 0px 10px;
 }
@@ -79,9 +76,7 @@ img{
     justify-content: center;
     align-items: center;
 }
-.nav-option:hover{
-    transform: scale(1.2);
-}
+
 .nav-option{
     display: flex;
     align-items: center;
